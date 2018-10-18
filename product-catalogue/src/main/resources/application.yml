@@ -1,0 +1,23 @@
+---
+micronaut:
+  server:
+    port: 9001
+  application:
+      name: productcatalogue
+
+---
+pc:
+  api:
+    version: v1
+
+---
+hystrix:
+  stream:
+    enabled: false
+
+---
+consul:
+  client:
+    registration:
+      enabled: true
+    defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"

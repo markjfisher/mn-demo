@@ -1,0 +1,30 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.61"
+}
+
+version "0.1"
+group "mn.demo"
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
+    compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
+    compile "io.micronaut:http:${projectVersion}"
+    compile "io.micronaut:runtime:${projectVersion}"
+    compile "io.micronaut:validation:${projectVersion}"
+	compile "io.github.microutils:kotlin-logging:1.5.9"
+}
+
+compileKotlin {
+	kotlinOptions {
+	    jvmTarget = '1.8' 
+	    //Will retain parameter names for Java reflection
+	    javaParameters = true 
+	}
+}
+
+compileTestKotlin {
+	kotlinOptions {
+	    jvmTarget = '1.8' 
+	    javaParameters = true 
+	}
+}

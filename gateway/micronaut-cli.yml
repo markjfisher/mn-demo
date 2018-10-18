@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: mn.demo.gateway
+---
+testFramework: spock
+sourceLanguage: kotlin

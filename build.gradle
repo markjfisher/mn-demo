@@ -1,0 +1,11 @@
+subprojects {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		maven { url "https://jcenter.bintray.com" }
+	}
+
+	dependencies {
+		// compile 'io.github.microutils:kotlin-logging:1.5.9'
+	}
+}
