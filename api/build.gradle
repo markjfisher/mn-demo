@@ -8,9 +8,9 @@ group "mn.demo"
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
-    compile "io.micronaut:http:${projectVersion}"
-    compile "io.micronaut:runtime:${projectVersion}"
-    compile "io.micronaut:validation:${projectVersion}"
+    compile "io.micronaut:micronaut-http:${projectVersion}"
+    compile "io.micronaut:micronaut-runtime:${projectVersion}"
+    compile "io.micronaut:micronaut-validation:${projectVersion}"
 	compile "io.github.microutils:kotlin-logging:1.5.9"
 }
 
